@@ -1,5 +1,284 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lección 17: Comparatives & Superlatives | English with your brain</title><meta name="description" content="Comparar personas, objetos y lugares usando comparativos y superlativos."><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="css/styles.css"></head><body>
-<script src="js/app.js"></script><script>document.write(nav("Lecciones"))</script>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lección 17: Comparatives & Superlatives | English with your brain</title><meta name="description" content="Comparar personas, objetos y lugares usando comparativos y superlativos."><link rel="icon" href="favicon.svg"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#15803d;--blue2:#166534;--dark:#0f172a;--muted:#64748b;--bg:#f7f9fc;--card:#fff;--line:#e2e8f0;--green:#059669}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--dark);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,calc(100% - 36px));margin:auto}
+.nav{height:70px;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900}
+.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#15803d,#16a34a);display:grid;place-items:center;color:white;font-size:20px}
+.brand small{display:block;color:var(--muted);font-size:11px;font-weight:700}
+.links{display:flex;gap:5px}
+.links a{padding:9px 14px;border-radius:10px;color:#475569;font-size:14px;font-weight:800}
+.links a:hover,.links a.active{background:#f0fdf4;color:var(--blue)}
+.menu{display:none;background:white;border:1px solid var(--line);border-radius:10px;padding:8px;cursor:pointer;font-size:20px}
+.hero{padding:90px 0 80px;background-image:linear-gradient(rgba(37,99,235,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,.055) 1px,transparent 1px);background-size:36px 36px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border:1px solid #dcfce7;border-radius:99px;background:white;color:#166534;font-size:13px;font-weight:800}
+h1{font-size:clamp(42px,6vw,68px);line-height:1.02;letter-spacing:-2px;font-weight:950;margin-top:22px}
+.gradient{background:linear-gradient(90deg,#15803d,#16a34a);color:transparent;background-clip:text;-webkit-background-clip:text}
+.hero h2{font-size:21px;margin-top:16px;color:#475569}
+.lead{font-size:18px;color:#64748b;max-width:650px;margin-top:18px;line-height:1.8}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:900;font-size:14px;border:1px solid transparent;cursor:pointer}
+.primary{background:var(--blue);color:white;box-shadow:0 12px 28px rgba(37,99,235,.2)}
+.primary:hover{background:var(--blue2)}
+.secondary{background:white;border-color:var(--line);color:#334155}
+.secondary:hover{background:#f8fafc}
+.dashboard{background:white;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 20px 60px rgba(15,23,42,.1)}
+.dash-head{display:flex;justify-content:space-between;align-items:center}
+.dash-icon{width:50px;height:50px;background:#f0fdf4;color:var(--blue);border-radius:15px;display:grid;place-items:center;font-size:23px}
+.muted{color:var(--muted)}
+.progress{height:10px;background:#eef2f7;border-radius:99px;overflow:hidden;margin-top:24px}
+.progress div{height:100%;width:35%;background:linear-gradient(90deg,#15803d,#16a34a);border-radius:99px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.stat{padding:16px;background:#f8fafc;border-radius:17px;font-weight:800}
+.section{padding:78px 0}
+.section-title{max-width:700px}
+.kicker{color:var(--blue);font-weight:900}
+.section h2{font-size:36px;line-height:1.15;letter-spacing:-1px;margin-top:7px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.card{background:white;border:1px solid var(--line);border-radius:24px;padding:26px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 45px rgba(15,23,42,.09);border-color:#bbf7d0}
+.card-number{color:var(--blue);font-size:13px;font-weight:950}
+.card h3{font-size:20px;margin-top:22px}
+.card p{color:var(--muted);margin-top:10px}
+.cta{background:#0f172a;color:white;border-radius:28px;padding:42px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta p{color:#cbd5e1;margin-top:6px}
+.page{padding:58px 0}
+.page-head{max-width:760px}
+.page h1{font-size:48px;margin-top:5px;letter-spacing:-1.5px}
+.page-head p{color:var(--muted);font-size:18px;margin-top:12px}
+.lesson-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:35px}
+.lesson-card{display:flex;align-items:center;gap:17px;padding:18px;background:white;border:1px solid var(--line);border-radius:20px;transition:.2s}
+.lesson-card:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(15,23,42,.08);border-color:#bbf7d0}
+.lesson-num{width:55px;height:55px;flex:none;display:grid;place-items:center;border-radius:16px;background:#f0fdf4;color:var(--blue);font-weight:950}
+.lesson-card h3{font-size:17px}
+.lesson-card small{color:var(--muted)}
+.unlocked{font-size:10px;color:var(--green);font-weight:950;text-transform:uppercase}
+.arrow{margin-left:auto;color:#cbd5e1;font-size:21px}
+.lesson-hero{background:#0f172a;color:white;border-radius:28px;padding:42px;margin-top:25px}
+.lesson-hero .kicker{color:#86efac}
+.lesson-hero h1{font-size:46px;margin-top:12px;letter-spacing:-1px}
+.lesson-hero p{color:#cbd5e1;margin-top:9px;font-size:19px}
+.content-grid{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:18px}
+.content-box{background:white;border:1px solid var(--line);border-radius:25px;padding:28px}
+.content-box h2{font-size:25px}
+.content-box p{color:var(--muted);margin-top:10px}
+.key{margin-top:22px;background:#f0fdf4;border:1px solid #dcfce7;border-radius:18px;padding:18px;color:#14532d}
+.key strong{display:block;margin-bottom:5px}
+.words{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.word{background:#f1f5f9;padding:7px 12px;border-radius:99px;font-size:13px;font-weight:800}
+.lesson-nav{display:flex;justify-content:space-between;margin-top:18px}
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:35px}
+.video-card{background:white;border:1px solid var(--line);border-radius:25px;overflow:hidden}
+.video{aspect-ratio:16/9;background:#0f172a}
+.video iframe{width:100%;height:100%;border:0}
+.video-info{padding:22px}
+.video-info h2{font-size:20px}
+.video-info p{color:var(--muted);font-size:14px;margin-top:5px}
+.yt{display:inline-block;margin-top:15px;color:var(--blue);font-size:13px;font-weight:900}
+.footer{border-top:1px solid var(--line);background:white;padding:30px 0;color:var(--muted);font-size:13px}
+@media(max-width:800px){.hero-grid,.content-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.lesson-grid,.video-grid{grid-template-columns:1fr}.links{display:none}.menu{display:block}.hero{padding:60px 0}.page h1{font-size:40px}.lesson-hero h1{font-size:37px}.cta{flex-direction:column;align-items:flex-start}}
+
+.lesson-full{margin-top:20px}
+.lesson-section{margin-top:18px}
+.lesson-section h2{font-size:25px;margin-bottom:10px}
+.lesson-section h3{font-size:18px;margin-top:18px;margin-bottom:7px}
+.example-list{display:grid;gap:10px;margin-top:14px}
+.example{border-left:4px solid #15803d;background:#f8fafc;border-radius:0 14px 14px 0;padding:14px 17px}
+.example .en{font-size:18px;font-weight:900}
+.example .es{font-size:17px;color:#166534;font-weight:750;margin-top:3px}
+.note{background:#f0fdf4;border:1px solid #dcfce7;border-radius:17px;padding:17px;margin-top:16px}
+.practice{background:#0f172a;color:white;border-radius:22px;padding:24px;margin-top:18px}
+.practice p{color:#cbd5e1}
+.practice ol{margin:14px 0 0 23px}
+.practice li{margin:8px 0}
+.answer{margin-top:14px;color:#86efac;font-weight:800}
+.video-note{font-size:13px;color:#64748b;margin-top:10px}
+
+/* ===== Practice Lab — refined learning UI ===== */
+.practice-lab{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 10px 35px rgba(15,23,42,.045)}
+.practice-head{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:30px 30px 26px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff,#fbfcfe)}
+.section-label,.skill-label{display:block;color:var(--blue);font-size:10px;font-weight:950;letter-spacing:1.5px}
+.practice-head h2{font-size:31px;letter-spacing:-.8px;margin-top:5px}
+.practice-head p{color:var(--muted);margin-top:6px;max-width:650px}
+.practice-meta{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.practice-meta span{font-size:11px;font-weight:850;color:#475569;border:1px solid var(--line);border-radius:99px;padding:7px 10px;background:#fff}
+.skill-block{padding:27px 30px 30px;border-bottom:1px solid var(--line)}
+.skill-block:last-child{border-bottom:0}
+.skill-title{display:flex;gap:15px;align-items:flex-start;margin-bottom:18px}
+.skill-index{width:34px;height:34px;flex:0 0 34px;border-radius:10px;background:#f0fdf4;color:var(--blue);display:grid;place-items:center;font-size:11px;font-weight:950}
+.skill-title h3{font-size:20px;margin-top:2px}
+.skill-title p{color:var(--muted);font-size:13px;margin-top:2px}
+.exercise-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.exercise-card{border:1px solid #e5e7eb;border-radius:18px;padding:19px;background:#fff;min-width:0;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}
+.exercise-card:hover{border-color:#cbd5e1;box-shadow:0 8px 24px rgba(15,23,42,.06);transform:translateY(-1px)}
+.exercise-top{display:flex;justify-content:space-between;gap:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:.7px;font-size:9px;font-weight:950}
+.exercise-card h4{font-size:15px;line-height:1.55;margin:11px 0 15px;color:#172033}
+.option-list{display:grid;gap:7px}
+.option{display:flex;align-items:center;gap:10px;text-align:left;width:100%;padding:10px 11px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;color:#334155;font:inherit;font-size:13px;font-weight:700;cursor:pointer;transition:.15s ease}
+.option span{width:22px;height:22px;flex:0 0 22px;border-radius:7px;background:#fff;border:1px solid #dbe2ea;display:grid;place-items:center;font-size:10px;font-weight:900;color:#64748b}
+.option:hover{border-color:#94a3b8;background:#fff}
+.option.correct{border-color:#86efac;background:#f0fdf4;color:#166534}
+.option.correct span{background:#16a34a;color:#fff;border-color:#16a34a}
+.option.wrong{border-color:#fca5a5;background:#fff7f7;color:#991b1b}
+.option.wrong span{background:#ef4444;color:#fff;border-color:#ef4444}
+.feedback{min-height:19px;margin-top:9px;font-size:11px;font-weight:850}
+.feedback.good{color:#15803d}.feedback.bad{color:#b91c1c}
+.listen-btn,.record-btn{display:inline-flex;align-items:center;gap:9px;border:0;border-radius:10px;padding:10px 13px;background:#0f172a;color:#fff;font:inherit;font-size:12px;font-weight:850;cursor:pointer;transition:.18s ease}
+.listen-btn:hover,.record-btn:hover{background:#1e293b;transform:translateY(-1px)}
+.listen-btn.playing{background:var(--blue)}
+.play-icon{font-size:9px}
+.transcript-btn{margin-top:11px;border:0;background:transparent;color:var(--blue);font:inherit;font-size:11px;font-weight:850;cursor:pointer;padding:0}
+.transcript{display:none;margin-top:9px;padding:10px 12px;border-left:3px solid #bbf7d0;background:#f8fafc;color:#475569;font-size:12px;line-height:1.6}
+.transcript.show{display:block}
+.model-line{padding:11px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;margin-bottom:13px}
+.model-line span{display:block;text-transform:uppercase;letter-spacing:.8px;font-size:9px;font-weight:950;color:#94a3b8;margin-bottom:3px}
+.model-line strong{font-size:13px;color:#334155}
+.record-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.record-btn{background:#fff;color:#334155;border:1px solid #dbe2ea}
+.record-btn:hover{background:#f8fafc}
+.record-btn.recording{border-color:#fca5a5;color:#b91c1c;background:#fff7f7}
+.record-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;display:inline-block}
+.recording .record-dot{animation:recordPulse 1s infinite}
+.record-status{font-size:11px;color:#94a3b8}
+.recording-audio{width:100%;margin-top:12px;height:34px}
+@keyframes recordPulse{50%{opacity:.35;transform:scale(.75)}}
+@media(max-width:800px){
+ .practice-head{display:block;padding:25px 20px}.practice-meta{justify-content:flex-start;margin-top:15px}
+ .skill-block{padding:23px 20px}.exercise-grid{grid-template-columns:1fr}
+ .practice-head h2{font-size:27px}
+}
+
+</style></head><body>
+<script>
+const lessons=[{"id": 1, "title": "Greetings & Introductions", "subtitle": "Saludos y presentaciones", "description": "Aprender a saludar, despedirse y presentarse en situaciones cotidianas.", "grammar": "Hello / Hi = Hola"}, {"id": 2, "title": "The Verb To Be", "subtitle": "El verbo ser / estar", "description": "Usar am, is y are para hablar de identidad, estado y características básicas.", "grammar": "I am = Yo soy/estoy"}, {"id": 3, "title": "Personal Pronouns", "subtitle": "Pronombres personales", "description": "Identificar quién realiza una acción y sustituir nombres por pronombres.", "grammar": "I = yo"}, {"id": 4, "title": "Numbers & Age", "subtitle": "Números y edad", "description": "Aprender números básicos y expresar la edad correctamente.", "grammar": "one, two, three = uno, dos, tres"}, {"id": 5, "title": "Family", "subtitle": "La familia", "description": "Hablar de familiares y presentar relaciones básicas.", "grammar": "mother = madre"}, {"id": 6, "title": "Possessive Adjectives", "subtitle": "Adjetivos posesivos", "description": "Expresar pertenencia con my, your, his, her, our y their.", "grammar": "my = mi"}, {"id": 7, "title": "This, That, These, Those", "subtitle": "Demostrativos", "description": "Señalar objetos y personas según estén cerca, lejos, en singular o plural.", "grammar": "this = este/esta, cerca, singular"}, {"id": 8, "title": "There Is & There Are", "subtitle": "Hay / existen", "description": "Describir lo que existe en un lugar usando singular y plural.", "grammar": "There is = hay, singular"}, {"id": 9, "title": "Present Simple", "subtitle": "Presente simple", "description": "Hablar de hábitos, rutinas, hechos y acciones frecuentes.", "grammar": "I work = Yo trabajo"}, {"id": 10, "title": "Daily Routines", "subtitle": "Rutinas diarias", "description": "Hablar de las acciones que realizas normalmente durante el día.", "grammar": "wake up = despertarse"}, {"id": 11, "title": "Frequency Adverbs", "subtitle": "Adverbios de frecuencia", "description": "Indicar con qué frecuencia ocurre una acción.", "grammar": "always = siempre"}, {"id": 12, "title": "Present Continuous", "subtitle": "Presente continuo", "description": "Describir acciones que están ocurriendo ahora o temporalmente.", "grammar": "am/is/are + verb-ing"}, {"id": 13, "title": "Likes & Dislikes", "subtitle": "Gustos y preferencias", "description": "Decir qué te gusta, qué no te gusta y preguntar por preferencias.", "grammar": "I like = me gusta"}, {"id": 14, "title": "Can & Can't", "subtitle": "Habilidad y posibilidad", "description": "Expresar habilidades y cosas que puedes o no puedes hacer.", "grammar": "can = poder / saber hacer"}, {"id": 15, "title": "Past Simple", "subtitle": "Pasado simple", "description": "Hablar de acciones terminadas en el pasado.", "grammar": "yesterday = ayer"}, {"id": 16, "title": "Going To", "subtitle": "Planes futuros", "description": "Hablar de planes e intenciones futuras.", "grammar": "am/is/are going to + verb"}, {"id": 17, "title": "Comparatives & Superlatives", "subtitle": "Comparaciones", "description": "Comparar personas, objetos y lugares usando comparativos y superlativos.", "grammar": "big → bigger = grande → más grande"}, {"id": 18, "title": "Prepositions", "subtitle": "Lugar y tiempo", "description": "Ubicar personas y objetos y hablar de momentos específicos.", "grammar": "in = en/dentro de"}, {"id": 19, "title": "Countable & Uncountable Nouns", "subtitle": "Contables e incontables", "description": "Hablar de cantidades con sustantivos que puedes contar y sustancias o conceptos que normalmente no cuentas individualmente.", "grammar": "one apple / two apples = una manzana / dos manzanas"}, {"id": 20, "title": "Everyday English", "subtitle": "Inglés para conversar", "description": "Integrar lo aprendido para participar en conversaciones cotidianas con expresiones útiles.", "grammar": "Please = por favor"}];
+const videoIds={"2": "g595QH0TxOw", "6": "F9tVsTCL1wo", "7": "qezUiuS8J8E", "10": "1fkJippQR4U", "12": "smh50ma5Mpk", "17": "MI-C6OYrRBk", "18": "6pdM6CIVFoo", "19": "zBmHkqYPFvM"};
+const videoSearches=["English greetings and introductions beginners lesson", "English verb to be beginners lesson", "English personal pronouns beginners lesson", "English numbers and age beginners lesson", "English family vocabulary beginners lesson", "English possessive adjectives beginners lesson", "This that these those English beginners lesson", "There is there are English beginners lesson", "English present simple beginners lesson", "English daily routines beginners lesson", "English adverbs of frequency beginners lesson", "English present continuous beginners lesson", "English likes and dislikes beginners lesson", "English can can't beginners lesson", "English past simple beginners lesson", "English going to future beginners lesson", "English comparatives superlatives beginners lesson", "English prepositions beginners lesson", "English countable uncountable nouns beginners lesson", "Everyday English conversation beginners lesson"];
+function nav(active){const items=[["index.html","Inicio"],["lecciones.html","Lecciones"],["multimedia.html","Multimedia"]];return `<header class="nav"><div class="container nav-inner"><a class="brand" href="index.html"><span class="logo">✦</span><span>English with your brain<small>Inglés para todos</small></span></a><nav class="links">${items.map(x=>`<a class="${active===x[1]?'active':''}" href="${x[0]}">${x[1]}</a>`).join("")}</nav><button class="menu" onclick="toggleMenu()">☰</button></div></header>`}
+function toggleMenu(){const n=document.querySelector(".links");n.style.display=n.style.display==="flex"?"none":"flex";n.style.position="absolute";n.style.right="18px";n.style.top="62px";n.style.flexDirection="column";n.style.background="white";n.style.padding="8px";n.style.border="1px solid #e2e8f0";n.style.borderRadius="14px";n.style.boxShadow="0 15px 35px rgba(0,0,0,.12)"}
+function footer(){return `<footer class="footer"><div class="container">© ${new Date().getFullYear()} English with your brain · Inglés para todos · Aprende a tu ritmo.</div></footer>`}
+function lessonCards(){return lessons.map(l=>`<a class="lesson-card" href="leccion-${l.id}.html"><div class="lesson-num">${String(l.id).padStart(2,"0")}</div><div><div class="unlocked">✓ Desbloqueada</div><h3>${l.title}</h3><small>${l.subtitle}</small></div><span class="arrow">→</span></a>`).join("")}
+function videoBox(i){const l=lessons[i-1],id=videoIds[l.id];if(id)return `<div class="video"><iframe src="https://www.youtube.com/embed/${id}" title="Video: ${l.title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><a class="yt" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=${id}">Abrir en YouTube ↗</a>`;const q=encodeURIComponent(videoSearches[i-1]);return `<div class="video" style="display:grid;place-items:center;padding:25px;text-align:center"><div><div style="font-size:35px">▶</div><strong>Video recomendado</strong><p class="video-note">Este tema abre una búsqueda directa en YouTube para evitar enlaces eliminados o videos no disponibles.</p><a class="btn primary" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${q}">Buscar video ↗</a></div></div>`}
+
+/* ===== Practice Lab: six focused activities per lesson ===== */
+const practiceData={"1":{"g":[["Choose the correct greeting for 8:00 a.m.","Good morning","Good night","Goodbye"],["Complete: “Nice to ___ you.”","meet","meat","meeting"]],"l":[["Laura says: “Hi, my name is Laura. I’m from Colombia.” Where is Laura from?","Colombia","Canada","Mexico","Hi, my name is Laura. I’m from Colombia."],["Tom says: “Good evening! Nice to meet you.” What is Tom doing?","Greeting someone","Saying goodbye","Ordering food","Good evening! Nice to meet you."]],"s":[["Introduce yourself: say your name and where you are from.","Hi, my name is ___. I’m from ___."],["Greet a new classmate and say that you are happy to meet them.","Hello! Nice to meet you."]]},"2":{"g":[["Choose: “I ___ a student.”","am","is","are"],["Choose: “They ___ ready.”","are","am","is"]],"l":[["Listen and choose: “She is happy today.” How does she feel?","Happy","Tired","Angry","She is happy today."],["Listen: “Are you ready? Yes, I am.” Is the person ready?","Yes","No","We don't know","Are you ready? Yes, I am."]],"s":[["Say three sentences with “I am” about yourself.","I am ___. I am ___. I am ___."],["Ask a classmate how they are and answer the question.","How are you? I’m ___."]]},"3":{"g":[["Replace “Maria” with a pronoun: “Maria is my friend.”","She","He","They"],["Replace “Carlos and I” with a pronoun.","We","They","He"]],"l":[["Listen: “Daniel is 15. He is a student.” Who is a student?","Daniel","Maria","They","Daniel is 15. He is a student."],["Listen: “My parents are at home. They are tired.” Who is tired?","My parents","My teacher","I","My parents are at home. They are tired."]],"s":[["Talk about yourself using I, then mention a friend using he or she.","I am ___. My friend is ___. He/She is ___."],["Describe two people using they.","They are ___. They are ___."]]},"4":{"g":[["Complete: “I am ___ years old.”","sixteen","sixteens","sixteen years"],["Which number comes after twenty-nine?","thirty","thirteen","twenty-eight"]],"l":[["Listen: “I’m twelve years old.” How old is the speaker?","12","20","22","I’m twelve years old."],["Listen: “There are thirty students in the class.” How many students?","30","13","33","There are thirty students in the class."]],"s":[["Say your age in a complete sentence.","I’m ___ years old."],["Count from 1 to 10 aloud, then say your age.","One, two, three, four, five, six, seven, eight, nine, ten. I’m ___ years old."]]},"5":{"g":[["Your mother’s brother is your…","uncle","cousin","nephew"],["Your sister’s son is your…","nephew","uncle","grandfather"]],"l":[["Listen: “My sister Anna is 12.” Who is 12?","Anna","The speaker","The mother","My sister Anna is 12."],["Listen: “My father and mother live with me.” Who lives with the speaker?","Parents","Friends","Teachers","My father and mother live with me."]],"s":[["Introduce two members of your family.","This is my ___. His/Her name is ___."],["Describe one family relationship.","My ___ is my ___."]]},"6":{"g":[["Choose: “This is ___ book.” The book belongs to me.","my","your","their"],["Choose: “They have a house. It is ___ house.”","their","our","his"]],"l":[["Listen: “This is Sarah. Her brother is Tom.” Who is Tom?","Sarah’s brother","Sarah’s father","Sarah’s friend","This is Sarah. Her brother is Tom."],["Listen: “We love our school.” Whose school is it?","Our school","Your school","Their school","We love our school."]],"s":[["Describe two things you own.","This is my ___. This is my ___."],["Talk about a family member and use his or her.","My ___ is ___. His/Her ___ is ___."]]},"7":{"g":[["A phone is in your hand. “___ is my phone.”","This","Those","These"],["Several books are far away. “___ are my books.”","Those","That","This"]],"l":[["Listen: “These shoes are new.” What is new?","The shoes","The shirt","The bag","These shoes are new."],["Listen: “That house is very big.” Is the house near or far?","Far","Near","Inside","That house is very big."]],"s":[["Point to something near you and describe it with this/these.","This is ___. / These are ___."],["Point to something farther away and describe it.","That is ___. / Those are ___."]]},"8":{"g":[["Choose: “___ a table in the room.”","There is","There are","There am"],["Choose: “___ three chairs.”","There are","There is","There be"]],"l":[["Listen: “There is a computer on the desk.” What is on the desk?","A computer","A TV","A lamp","There is a computer on the desk."],["Listen: “There are two windows.” How many windows?","Two","One","Three","There are two windows."]],"s":[["Describe your room with one “There is” sentence.","There is a ___ in my room."],["Describe your room with one “There are” sentence.","There are ___ in my room."]]},"9":{"g":[["Choose: “She ___ English every day.”","studies","study","studying"],["Choose the negative: “I ___ coffee.”","don’t drink","doesn’t drink","not drink"]],"l":[["Listen: “Mark works at a bank every day.” Where does Mark work?","At a bank","At a school","At a hospital","Mark works at a bank every day."],["Listen: “She doesn’t play tennis on Mondays.” Does she play tennis on Mondays?","No","Yes","Only at night","She doesn’t play tennis on Mondays."]],"s":[["Describe one thing you do every day.","I ___ every day."],["Say one habit you have and one thing you don’t do.","I usually ___. I don’t ___."]]},"10":{"g":[["Complete: “I ___ breakfast at 7.”","have","has","having"],["Choose: “He ___ up at 6.”","gets","get","getting"]],"l":[["Listen: “I wake up at seven and go to school at eight.” What time does the speaker wake up?","7:00","8:00","9:00","I wake up at seven and go to school at eight."],["Listen: “She has lunch at one.” When does she have lunch?","1:00","11:00","2:00","She has lunch at one."]],"s":[["Tell us three things you do in the morning.","I wake up ___. Then I ___. After that, I ___."],["Describe your evening routine in two sentences.","In the evening, I ___. Then I ___."]]},"11":{"g":[["Choose the correct position: “I ___ go to bed late.”","usually","go usually","usually am"],["100% frequency means…","always","sometimes","never"]],"l":[["Listen: “I always brush my teeth before bed.” How often?","Always","Sometimes","Never","I always brush my teeth before bed."],["Listen: “We sometimes eat pizza on Friday.” How often?","Sometimes","Always","Never","We sometimes eat pizza on Friday."]],"s":[["Make a sentence with always.","I always ___."],["Make two sentences: one with usually and one with never.","I usually ___. I never ___."]]},"12":{"g":[["Choose: “She is ___ TV now.”","watching","watch","watches"],["Complete: “They are ___ English.”","studying","study","studies"]],"l":[["Listen: “Tom is cooking dinner right now.” What is Tom doing?","Cooking","Sleeping","Driving","Tom is cooking dinner right now."],["Listen: “The children are playing outside.” Where are they?","Outside","At school","At home","The children are playing outside."]],"s":[["Describe what you are doing right now.","I am ___ right now."],["Look around and describe one person’s current action.","He/She is ___ right now."]]},"13":{"g":[["Choose: “I ___ music.”","like","likes","liking"],["Choose the correct negative: “She ___ spicy food.”","doesn’t like","don’t like","not likes"]],"l":[["Listen: “I like chocolate, but I don’t like coffee.” What does the speaker like?","Chocolate","Coffee","Tea","I like chocolate, but I don’t like coffee."],["Listen: “She loves soccer.” What does she enjoy?","Soccer","Basketball","Cooking","She loves soccer."]],"s":[["Say two things you like.","I like ___ and ___."],["Say one thing you dislike and ask someone about their preference.","I don’t like ___. Do you like ___?"]]},"14":{"g":[["Choose: “I ___ swim.”","can","can to","am can"],["Choose: “He ___ drive.”","can’t","doesn’t can","not can"]],"l":[["Listen: “Maria can speak English and Spanish.” What can Maria do?","Speak two languages","Drive a car","Play tennis","Maria can speak English and Spanish."],["Listen: “I can’t swim.” Can the speaker swim?","No","Yes","Only today","I can’t swim."]],"s":[["Say two things you can do.","I can ___ and ___."],["Say one thing you can’t do and one thing you want to learn.","I can’t ___. I want to learn to ___."]]},"15":{"g":[["Choose the past of “play.”","played","plaied","playd"],["Complete: “Yesterday, I ___ to school.”","went","go","going"]],"l":[["Listen: “I visited my grandmother last weekend.” What did the speaker do?","Visited grandmother","Went shopping","Played football","I visited my grandmother last weekend."],["Listen: “They watched a movie yesterday.” When did they watch it?","Yesterday","Tomorrow","Every day","They watched a movie yesterday."]],"s":[["Say two things you did yesterday.","Yesterday, I ___ and ___."],["Tell a short past event using two sentences.","Last weekend, I ___. Then I ___."]]},"16":{"g":[["Choose: “I am going to ___ tonight.”","study","studied","studying"],["Choose: “They are going to travel ___.”","tomorrow","yesterday","last week"]],"l":[["Listen: “We are going to visit Bogotá next month.” What is the plan?","Visit Bogotá","Visit Cali","Stay home","We are going to visit Bogotá next month."],["Listen: “She is going to study tonight.” When will she study?","Tonight","Yesterday","Next year","She is going to study tonight."]],"s":[["Describe one plan for tomorrow.","Tomorrow, I’m going to ___."],["Make two future plans using going to.","I’m going to ___. I’m also going to ___."]]},"17":{"g":[["Complete: “A car is ___ than a bicycle.”","faster","fastest","more fast"],["Choose the superlative: “This is the ___ building.”","tallest","taller","more tall"]],"l":[["Listen: “The blue car is faster than the red car.” Which car is faster?","Blue car","Red car","Both are equal","The blue car is faster than the red car."],["Listen: “Mount Everest is the highest mountain.” What is Everest?","The highest mountain","A small hill","A river","Mount Everest is the highest mountain."]],"s":[["Compare two objects near you.","The ___ is bigger/smaller than the ___."],["Make one superlative sentence about your class or city.","___ is the most ___ / the ___est."]]},"18":{"g":[["The keys are ___ the table.","on","at","to"],["We meet ___ Monday.","on","in","at"]],"l":[["Listen: “The cat is under the chair.” Where is the cat?","Under the chair","On the chair","Behind the table","The cat is under the chair."],["Listen: “The class starts at nine.” What time does it start?","9:00","8:00","10:00","The class starts at nine."]],"s":[["Describe where two objects are.","The ___ is on/in/under the ___."],["Say when you study English using a time preposition.","I study English on/in/at ___."]]},"19":{"g":[["Which noun is countable?","apple","water","rice"],["Choose: “How ___ water do you need?”","much","many","few"]],"l":[["Listen: “There are three apples and some rice.” What is countable?","Apples","Rice","Both","There are three apples and some rice."],["Listen: “We need some water.” Is water countable here?","No","Yes","Only two waters","We need some water."]],"s":[["Name three countable things in your kitchen.","There are three ___: ___, ___ and ___."],["Ask for an uncountable item politely.","Can I have some ___, please?"]]},"20":{"g":[["Choose the polite request:","Could you help me, please?","Help me now.","You help me."],["Complete: “I don’t ___.”","understand","understands","understanding"]],"l":[["Listen: “Excuse me, could you speak slowly?” What does the person want?","Slower speech","A ticket","Directions","Excuse me, could you speak slowly?"],["Listen: “Can you repeat, please?” What is the speaker asking for?","A repetition","An apology","A translation","Can you repeat, please?"]],"s":[["Ask someone politely to repeat something.","Could you repeat that, please?"],["Start a short conversation: greet, ask how they are, and respond.","Hi! How are you? I’m ___. How about you?"]]}};
+
+function practiceLab(i){
+  const d=practiceData[i]; if(!d) return "";
+  const uid=`lesson-${i}-`;
+  return `<section class="practice-lab" id="practice">
+    <div class="practice-head">
+      <div><span class="section-label">TALLER DE PRÁCTICA</span><h2>Practice Lab</h2><p>Seis actividades cortas para comprobar que puedes usar el tema, no solo reconocerlo.</p></div>
+      <div class="practice-meta"><span>2 Grammar</span><span>2 Listening</span><span>2 Speaking</span></div>
+    </div>
+    <div class="skill-block">
+      <div class="skill-title"><span class="skill-index">01</span><div><span class="skill-label">GRAMMAR</span><h3>Use it correctly</h3><p>Selecciona la opción que completa mejor cada oración.</p></div></div>
+      <div class="exercise-grid">${d.g.map((q,n)=>grammarExercise(q,n,uid+"g"+n)).join("")}</div>
+    </div>
+    <div class="skill-block">
+      <div class="skill-title"><span class="skill-index">02</span><div><span class="skill-label">LISTENING</span><h3>Listen for meaning</h3><p>Escucha dos veces si lo necesitas y responde sin mirar la transcripción.</p></div></div>
+      <div class="exercise-grid">${d.l.map((q,n)=>listeningExercise(q,n,uid+"l"+n)).join("")}</div>
+    </div>
+    <div class="skill-block">
+      <div class="skill-title"><span class="skill-index">03</span><div><span class="skill-label">SPEAKING</span><h3>Say it out loud</h3><p>Habla en voz alta. Puedes grabarte y escucharte para revisar tu fluidez.</p></div></div>
+      <div class="exercise-grid">${d.s.map((q,n)=>speakingExercise(q,n,uid+"s"+n)).join("")}</div>
+    </div>
+  </section>`;
+}
+
+function grammarExercise(q,n,id){
+  const [prompt,answer,...opts]=q;
+  const options=[answer,...opts];
+  return `<article class="exercise-card" data-answer="${id}">
+    <div class="exercise-top"><span>Grammar ${n+1}</span><span>1 punto</span></div>
+    <h4>${prompt}</h4>
+    <div class="option-list">${options.map((o,j)=>`<button type="button" class="option" onclick="checkGrammar(this,'${id}','${encodeURIComponent(answer)}')"><span>${String.fromCharCode(65+j)}</span>${escText(o)}</button>`).join("")}</div>
+    <div class="feedback" id="${id}-feedback" aria-live="polite"></div>
+  </article>`;
+}
+
+function listeningExercise(q,n,id){
+  const prompt=q[0],answer=q[1],opts=[q[2],q[3]];
+  return `<article class="exercise-card listening-card">
+    <div class="exercise-top"><span>Listening ${n+1}</span><span>1 punto</span></div>
+    <h4>${prompt}</h4>
+    <button type="button" class="listen-btn" onclick="speakListening(this,${JSON.stringify(q[4])})"><span class="play-icon">▶</span><span>Escuchar audio</span></button>
+    <div class="option-list">${[answer,...opts].map((o,j)=>`<button type="button" class="option" onclick="checkListening(this,'${id}','${encodeURIComponent(answer)}')"><span>${String.fromCharCode(65+j)}</span>${escText(o)}</button>`).join("")}</div>
+    <button type="button" class="transcript-btn" onclick="toggleTranscript('${id}')">Ver transcripción</button>
+    <div class="transcript" id="${id}-transcript">${escText(q[4])}</div>
+    <div class="feedback" id="${id}-feedback" aria-live="polite"></div>
+  </article>`;
+}
+
+function speakingExercise(q,n,id){
+  const [prompt,model]=q;
+  return `<article class="exercise-card speaking-card">
+    <div class="exercise-top"><span>Speaking ${n+1}</span><span>Producción libre</span></div>
+    <h4>${prompt}</h4>
+    <div class="model-line"><span>Modelo</span><strong>${escText(model)}</strong></div>
+    <div class="record-row">
+      <button type="button" class="record-btn" id="${id}-record" onclick="toggleRecording('${id}')"><span class="record-dot"></span>Grabar respuesta</button>
+      <span class="record-status" id="${id}-status">Listo para practicar</span>
+    </div>
+    <audio class="recording-audio" id="${id}-audio" controls hidden></audio>
+  </article>`;
+}
+
+function escText(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
+
+function checkGrammar(btn,id,encoded){
+  const card=btn.closest(".exercise-card"), feedback=card.querySelector(".feedback"), answer=decodeURIComponent(encoded);
+  card.querySelectorAll(".option").forEach(b=>b.classList.remove("correct","wrong"));
+  const selected=btn.textContent.trim().replace(/^[A-Z]\s*/,"");
+  if(selected===answer){btn.classList.add("correct");feedback.textContent="Correcto. Buen trabajo.";feedback.className="feedback good";}
+  else{btn.classList.add("wrong");feedback.textContent="No esta vez. Revisa la regla y prueba de nuevo.";feedback.className="feedback bad";}
+}
+
+function checkListening(btn,id,encoded){
+  const card=btn.closest(".exercise-card"), feedback=card.querySelector(".feedback"), answer=decodeURIComponent(encoded);
+  card.querySelectorAll(".option").forEach(b=>b.classList.remove("correct","wrong"));
+  const selected=btn.textContent.trim().replace(/^[A-Z]\s*/,"");
+  if(selected===answer){btn.classList.add("correct");feedback.textContent="Correcto. Tu comprensión es precisa.";feedback.className="feedback good";}
+  else{btn.classList.add("wrong");feedback.textContent="Escucha otra vez y fíjate en las palabras clave.";feedback.className="feedback bad";}
+}
+
+function speakListening(button,text){
+  if(!("speechSynthesis" in window)){button.querySelector("span:last-child").textContent="Audio no disponible";return;}
+  window.speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text); u.lang="en-US"; u.rate=.88; u.pitch=1;
+  button.classList.add("playing"); button.querySelector("span:last-child").textContent="Reproduciendo…";
+  u.onend=()=>{button.classList.remove("playing");button.querySelector("span:last-child").textContent="Escuchar de nuevo";};
+  speechSynthesis.speak(u);
+}
+
+function toggleTranscript(id){
+  const el=document.getElementById(id+"-transcript"),btn=event.currentTarget;
+  const show=el.classList.toggle("show"); btn.textContent=show?"Ocultar transcripción":"Ver transcripción";
+}
+
+let activeRecordings={};
+async function toggleRecording(id){
+  const btn=document.getElementById(id+"-record"), status=document.getElementById(id+"-status"), audio=document.getElementById(id+"-audio");
+  if(activeRecordings[id]){activeRecordings[id].stop();return;}
+  if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){status.textContent="Tu navegador no permite grabación aquí.";return;}
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+    const chunks=[]; const rec=new MediaRecorder(stream); activeRecordings[id]=rec;
+    rec.ondataavailable=e=>chunks.push(e.data);
+    rec.onstop=()=>{
+      stream.getTracks().forEach(t=>t.stop()); const blob=new Blob(chunks,{type:"audio/webm"});
+      audio.src=URL.createObjectURL(blob); audio.hidden=false; btn.classList.remove("recording");
+      btn.innerHTML='<span class="record-dot"></span>Grabar de nuevo'; status.textContent="Grabación lista. Escúchate y repite si quieres."; delete activeRecordings[id];
+    };
+    rec.start(); btn.classList.add("recording"); btn.innerHTML='<span class="record-dot"></span>Detener grabación'; status.textContent="Grabando…";
+  }catch(e){status.textContent="Permiso de micrófono no concedido.";}
+}
+
+</script><script>document.write(nav("Lecciones"))</script>
 <main class="page"><div class="container">
 <a class="muted" href="lecciones.html">← Volver a todas las lecciones</a>
 <section class="lesson-hero"><span class="kicker">LECCIÓN 17 · ELEMENTARY</span><h1>Comparatives & Superlatives</h1><p>Comparaciones</p><p>Comparar personas, objetos y lugares usando comparativos y superlativos.</p></section>
